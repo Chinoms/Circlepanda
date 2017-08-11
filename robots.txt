@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /app/
+Disallow: /dashboard/
+
+User-agent: Googlebot
+Disallow: /app/
+Disallow: /dashboard/
