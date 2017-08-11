@@ -1,0 +1,1344 @@
+@media (min-width: 1920px) and (max-width: 2000px){
+  /*--- Post ---*/
+  .right-content {
+		display: inline-block;
+		background-color: transparent;
+		height: auto;
+		min-height: 500px;
+		width: 550px;
+		margin: 20px 0 0 10px;
+		padding: 0 0 3em 0;
+  }
+  .left-content {
+		display: inline-block;
+		background-color: transparent;
+		height: auto;
+		min-height: 500px;
+		width: 550px;
+		margin: 20px 0 0 10px;
+		padding: 0 0 3em 0;
+  }
+  /*--- Inner Display Box ---*/
+  .display-box {
+    display: inline-block;
+    height: 300px;
+    width: 269px;
+    box-shadow: 0 1px 3px #CCC;
+    transition: .5s ease-in-out;
+}
+
+  /*-- Typo's --*/
+  .inner-name {
+    font-size: 18px;
+}
+
+.inner-btn, .inner-btn:hover{
+	display: inline-block;
+	font-size: 20px;
+	height: auto;
+	width: auto;
+	padding: 5px 20px 5px 20px;
+	background-color: transparent;
+	transition: .5s ease-in-out;
+	border: hidden;
+	background-color: #E9E9E9;
+	color: #444;
+	float: right;
+	border-radius: 4px;
+}
+
+.interest-space{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	min-height: 300px;
+	margin: 30px 0 0 6px;
+	background-color: transparent;
+}
+
+/*--End media on screen [1920px]--*/
+}
+
+}
+
+@media (min-width: 1440px) and (max-width: 1919px){
+
+}
+
+@media (min-width: 1280px) and (max-width: 1439px){
+
+}
+
+@media (min-width: 980px) and (max-width: 1279px){
+  .right-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 610px;
+    margin: 20px 0 0 0;
+    padding: 0 0 3em 0;
+  }
+
+	.left-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 610px;
+    margin: 20px 5px 0 6px;
+    padding: 0 0 3em 0;
+	}
+
+	.interest-space {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    margin: 30px 0 0 0;
+    background-color: transparent;
+	}
+
+	.about-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    margin: 0 25% 0 25%;
+    background-color: transparent;
+    z-index: 15;
+    display: none;
+    overflow-y: scroll;
+	}
+
+	.home, .collection, .channel, .profile, .people, .page, .settings, .help,
+	.home:hover, .collection:hover, .channel:hover, .profile:hover, .people:hover, .page:hover, .settings:hover, .help:hover {
+			width: 190px;
+	}
+
+	.display-box {
+	    display: inline-block;
+	    height: 280px;
+	    width: 270px;
+	    box-shadow: 0 1px 3px #CCC;
+	    transition: .5s ease-in-out;
+	    vertical-align: top;
+			margin: 0 0 20px 20px;
+	}
+
+	.ico-dp {
+    display: inline-table;
+    height: 45px;
+    width: 45px;
+    margin: -20px 0 0 5px;
+	}
+
+	.modal-changecover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 100px 30% 0 30%;
+    width: 40%;
+    height: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 10;
+    display: none;
+	}
+
+	.comment-pane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 50%;
+    margin: 100px 25% 0 25%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    font-size: 16px;
+    display: none;
+    border-radius: 4px;
+	}
+
+	.dropdown-whatsnew {
+    position: absolute;
+    top: 65px;
+    right: 60px;
+    height: 350px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-message {
+    position: absolute;
+    top: 65px;
+    right: 40px;
+    height: 350px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.general-notif {
+    position: fixed;
+    height: 100%;
+    width: 40%;
+    background-color: #FFF;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: auto;
+    min-height: 150px;
+    width: 70%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+	}
+
+}
+
+@media (min-width: 800px) and (max-width: 979px){
+
+	.home, .collection, .channel, .profile, .people, .page, .settings, .help,
+	.home:hover, .collection:hover, .channel:hover, .profile:hover, .people:hover, .page:hover, .settings:hover, .help:hover {
+			width: 160px;
+	}
+
+	.right-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 501px;
+    margin: 0 0 40px 6px;
+    padding: 0 0 3em 0;
+	}
+
+	.left-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 500px;
+    margin: 20px 5px 0 6px;
+    padding: 0 0 3em 0;
+	}
+
+	.display-box {
+    display: inline-block;
+    height: 260px;
+    width: 244px;
+    box-shadow: 0 1px 3px #CCC;
+    transition: .5s ease-in-out;
+    vertical-align: top;
+    margin: 1.5rem 0 0 0.6rem;
+	}
+
+	.profile-dp-holder, .profile-dp{
+		height: 70px;
+		width: 70px;
+	}
+
+	.profile-dp {
+	    position: absolute;
+	    border: 2px solid;
+	    border-color: #CCC;
+	}
+
+	.profile-dp-holder {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+	}
+
+	.naming {
+    position: absolute;
+    bottom: 12px;
+    left: 110px;
+    color: #FFF;
+	}
+
+	h2, .h2 {
+    font-size: 20px;
+	}
+
+	.aboutmelink, .moreico {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 0 30px 0 0;
+	}
+
+	.edit-profile-btn {
+    background-color: #E9E9E9;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 10px 15px;
+    color: #444;
+    border: hidden;
+    border-radius: 4px;
+    font-size: 14px;
+	}
+
+	.modal-changecover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 100px 30% 0 30%;
+    width: 40%;
+    height: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 10;
+    display: none;
+	}
+
+	.about-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    margin: 0 20% 0 20%;
+    background-color: transparent;
+    z-index: 15;
+    display: none;
+    overflow-y: scroll;
+	}
+
+	.status-pop {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    background-color: #00CC99;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    cursor: pointer;
+	}
+
+	.sitename-tag {
+		color: #FFF;
+		margin: 0 0 0 10px;
+		font-size: 18px;
+	}
+
+	.comment-pane {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 450px;
+		width: 55%;
+		margin: 150px 27.5% 0 27.5%;
+		background-color: #FFF;
+		box-shadow: 0 1px 3px #CCC;
+		font-size: 16px;
+		display: none;
+		border-radius: 4px;
+	}
+
+	.general-notif {
+		position: fixed;
+		height: 100%;
+		width: 45%;
+		background-color: #FFF;
+		top: 0;
+		right: 0;
+		overflow-y: scroll;
+		display: none;
+	}
+
+	.dropdown-message {
+		position: absolute;
+		top: 65px;
+		right: 40px;
+		height: 350px;
+		width: 100%;
+		background-color: #FFF;
+		box-shadow: 0 1px 3px #CCC;
+		border-radius: 3px;
+		z-index: 5;
+		overflow-y: scroll;
+		display: none;
+	}
+
+	.dropdown-whatsnew {
+		position: absolute;
+		top: 65px;
+		right: 60px;
+		height: 350px;
+		width: 100%;
+		background-color: #FFF;
+		box-shadow: 0 1px 3px #CCC;
+		border-radius: 3px;
+		z-index: 5;
+		overflow-y: scroll;
+		display: none;
+	}
+
+	.dropdown-nav {
+		position: absolute;
+		top: 65px;
+		right: 20px;
+		height: auto;
+		min-height: 150px;
+		width: 80%;
+		background-color: #FFF;
+		box-shadow: 0 1px 3px #CCC;
+		border-radius: 3px;
+		z-index: 5;
+		display: none;
+	}
+
+              .personal_holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 96%;
+    width: 84%;
+    margin: 2% 8% 2% 8%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 20;
+    display: none;
+	}
+
+	.menu_span, .menu_span:hover {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    color: #CCC;
+    padding: 5px 0 0 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 799px){
+	.display-box {
+    display: inline-block;
+    height: 260px;
+    width: 232px;
+    box-shadow: 0 1px 3px #CCC;
+    transition: .5s ease-in-out;
+    vertical-align: top;
+    margin: 1.5rem 0 0 0.6rem;
+	}
+
+	.naming {
+    position: absolute;
+    bottom: 0;
+    left: 105px;
+    color: #FFF;
+}
+
+	.home, .collection, .channel, .profile, .people, .page, .settings, .help,
+	.home:hover, .collection:hover, .channel:hover, .profile:hover, .people:hover, .page:hover, .settings:hover, .help:hover {
+			width: 100px;
+	}
+
+	.m_link{
+		display: none;
+	}
+
+	.profile-dp-holder, .profile-dp{
+		height: 70px;
+		width: 70px;
+	}
+
+	.profile-dp {
+			position: absolute;
+			border: 2px solid;
+			border-color: #CCC;
+	}
+
+	.profile-dp-holder {
+		position: absolute;
+		bottom: 10px;
+		left: 25px;
+	}
+
+	.cover-photo {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+		background-image: url('../../images/blur.jpg');
+    background-color: #CCC;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 2px 4px #DDD;
+    margin: 12px 0 0 0;
+	}
+
+	.left-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 477px;
+    margin: 20px 5px 0 5px;
+    padding: 0 0 3em 0;
+	}
+
+	.right-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 480px;
+    margin: 0 0 40px 4px;
+    padding: 0 0 3em 0;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.aboutmelink, .moreico {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 0 30px 0 0;
+	}
+
+	.edit-profile-btn {
+    background-color: #E9E9E9;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 10px 15px;
+    color: #444;
+    border: hidden;
+    border-radius: 4px;
+    font-size: 14px;
+	}
+
+	.edit-holder {
+    position: absolute;
+    height: auto;
+    min-height: 60px;
+    width: auto;
+    max-width: 20%;
+    bottom: 0;
+    right: 40px;
+    text-align: right;
+	}
+
+	.about-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    background-color: transparent;
+    z-index: 15;
+    display: none;
+    overflow-y: scroll;
+	}
+
+	.sitename-tag {
+    color: #FFF;
+    margin: 0 0 0 10px;
+    font-size: 16px;
+	}
+
+	.dropdown-whatsnew {
+    position: absolute;
+    top: 65px;
+    right: 60px;
+    height: 350px;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-message {
+		position: absolute;
+		top: 65px;
+		right: 40px;
+		height: 350px;
+		width: 100%;
+		background-color: #FFF;
+		box-shadow: 0 1px 3px #CCC;
+		border-radius: 3px;
+		z-index: 5;
+		overflow-y: scroll;
+		display: none;
+	}
+
+	.general-notif {
+    position: fixed;
+    height: 100%;
+    width: 45%;
+    background-color: #FFF;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: auto;
+    min-height: 150px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+	}
+
+	.modal-changecover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 100px 30% 0 30%;
+    width: 40%;
+    height: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 10;
+    display: none;
+	}
+
+	#on {
+    height: 13px;
+    width: 13px;
+    background-color: #0CC243;
+    z-index: 1;
+    position: absolute;
+    right: 180px;
+    top: 70px;
+    cursor: pointer;
+	}
+
+     .personal_holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 96%;
+    width: 88%;
+    margin: 2% 6% 2% 6%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 20;
+    display: none;
+	}
+
+	.menu_span, .menu_span:hover {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    color: #CCC;
+    padding: 5px 0 0 10px;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 767px){
+	.left-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 390px;
+    margin: 15px 0 0 0;
+    padding: 0 0 3em 0;
+	}
+
+	.right-content {
+		display: inline-block;
+		background-color: transparent;
+		height: auto;
+		min-height: 500px;
+		width: 390px;
+		margin: 0 0 0 0;
+		padding: 0 0 3em 0;
+	}
+
+  .postarea, .postarea_plus, .post_inner {
+    display: inline-table;
+    width: 96%;
+    height: auto;
+    min-height: 600px;
+    font-family: 'Raleway', Arial, sans-serif;
+  }
+
+  .postarea {
+      margin: 10px 1% 0 3%;
+  }
+
+	.about-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
+    background-color: transparent;
+    z-index: 15;
+    display: none;
+    overflow-y: scroll;
+	}
+
+	.bg-round-dp {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: -60px 0 0 0;
+	}
+
+	.edit-holder {
+		position: absolute;
+		height: auto;
+		min-height: 60px;
+		width: auto;
+		max-width: 30%;
+		bottom: 0px;
+		right: 40px;
+		text-align: right;
+	}
+
+	.cover {
+    display: inline-table;
+    height: 105px;
+    width: 100%;
+    background-image: url('../../images/blur.jpg');
+    background-size: cover;
+    background-color: #CCC;
+	}
+
+	.cover-photo {
+    display: inline-block;
+    width: 100%;
+    height: 310px;
+    background-size: cover;
+    background-image: url('../../images/blur.jpg');
+    background-color: #CCC;
+    margin: 40px 0 0 0 !important;
+	}
+
+	.profile-dp-holder, .profile-dp{
+		height: 70px;
+		width: 70px;
+	}
+
+	.profile-dp {
+			position: absolute;
+			border: 2px solid;
+			border-color: #CCC;
+	}
+
+	.profile-dp-holder {
+		position: absolute;
+		bottom: 0;
+		left: 35px;
+	}
+
+  .profile-cover {
+    display: inline-block;
+    background: url(../../images/circlepanda-fullbanner-image-2.jpg) fixed no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 96%;
+    float: right;
+    margin: 21% 2% 0;
+    background-color: #49bc9c;
+  }
+
+  img.profile-dp {
+    display: inline-table;
+    height: 120px;
+    width: 120px;
+    float: left;
+    margin: 105% 0 0 -21%;
+  }
+
+	.edit-profile-btn {
+    background-color: #E9E9E9;
+    height: auto;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    color: #444;
+    border: hidden;
+    border-radius: 4px;
+    font-size: 14px;
+	}
+
+	.like-count {
+    font-size: 14px;
+    margin: 30px 0 0 0;
+    display: inline-block;
+	}
+
+	.hide-screen-sm{
+		display: none;
+	}
+
+	section nav.menu {
+		display: none;
+	}
+
+	.display-box {
+	  display: inline-block;
+	  height: 210px;
+	  width: 159px;
+	  box-shadow: 0 1px 3px #CCC;
+	  transition: .5s ease-in-out;
+    vertical-align: top;
+	  margin: 1.5rem 0 0 0.4rem;
+	}
+
+  .user-info {
+    display: inline-table;
+    margin: 80% 0 0 30%;
+    color: #fff;
+    font-family: 'Raleway', Arial, sans-serif;
+  }
+
+  .inline-pos-addbtn, .abt-txt {
+    display: inline-table;
+    margin: 5px 8px 0 8px;
+    float: right;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .add-btn {
+    padding: 10px 35px;
+    margin: 0px 30px 0 10px;
+  }
+
+  .holder-mobi {
+    display: block;
+    width: 95%;
+    height: auto;
+    min-height: 50px;
+    margin: 20px 0 0 50px;
+  }
+
+  .post-info {
+    display: inline-table;
+    width: 85%;
+    height: auto;
+    margin: -10px 0 0;
+  }
+
+  .dp {
+    display: inline-table;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 0 0 0 5px;
+  }
+
+	.naming {
+    position: absolute;
+    top: 120px;
+    left: 45px;
+    color: #FFF;
+	}
+
+	.ico-dp {
+    display: inline-table;
+    height: 35px;
+    width: 35px;
+    margin: -12px 0 5px 5px;
+	}
+
+	.chat-pane {
+    display: none;
+	}
+
+	.status-wrap{
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 1% 2% 0 2%;
+		width: 96%;
+		height: auto;
+		min-height: 150px;
+		background-color: #FFFFFF;
+		border-radius: 5px;
+		box-shadow: 0 1px 3px #CCC;
+		padding: 0 0 10px 0;
+		z-index: 20;
+	}
+
+	.text-space{
+		display: inline-block;
+		width: 100%;
+		background-color: #FFFFFF;
+		height: 60%;
+		color: #CCC;
+		border: hidden;
+		padding: 20px;
+		font-size: 16px;
+	}
+
+	.space-out {
+    display: block;
+    margin: 50px 0 15px 0;
+    font-weight: 600;
+	}
+
+	.general-notif {
+    position: fixed;
+    height: 100%;
+    width: 90%;
+    background-color: #FFF;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-message, .dropdown-whatsnew {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: 350px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: auto;
+    min-height: 150px;
+    width: 60%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+	}
+
+	.comment-pane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 90%;
+    margin: 100px 5% 0 5%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    font-size: 16px;
+    display: none;
+    border-radius: 4px;
+	}
+
+	.icon-upload {
+    position: absolute;
+    right: 30px;
+    top: 93px;
+    font-size: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    margin: 0 10px 0 0;
+	}
+
+	.modal-changecover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 100px 10% 0 10%;
+    width: 80%;
+    height: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 10;
+    display: none;
+	}
+
+	.status-pop {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    background-color: #00CC99;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 21px;
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    cursor: pointer;
+	}
+
+	#msg {
+		position: fixed;
+		bottom: 20px;
+		left: 10px;
+		height: auto;
+		width: 60%;
+		background-color: #444;
+		color: #FFF;
+		font-size: 12px;
+		padding: 10px;
+		border-radius: 3px;
+		z-index: 50;
+	}
+
+  .personal_holder {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    height: 96%;
+    width: 96%;
+    margin: 1% 2% 2% 2%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 20;
+    display: none;
+	}
+
+	.menu_span, .menu_span:hover {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+    color: #CCC;
+    padding: 5px 0 0 10px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 359px){
+	.left-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 295px;
+    margin: 15px 0 0 0;
+    padding: 0 0 3em 0;
+	}
+
+	.right-content {
+		display: inline-block;
+		background-color: transparent;
+		height: auto;
+		min-height: 500px;
+		width: 295px;
+		margin: 0 0 0 0;
+		padding: 0 0 3em 0;
+	}
+
+	.about-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
+    background-color: transparent;
+    z-index: 15;
+    display: none;
+    overflow-y: scroll;
+	}
+
+	.bg-round-dp {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: -60px 0 0 0;
+	}
+
+	.edit-holder {
+		position: absolute;
+		height: auto;
+		min-height: 60px;
+		width: auto;
+		max-width: 30%;
+		bottom: 0px;
+		right: 40px;
+		text-align: right;
+	}
+
+	.cover {
+    display: inline-table;
+    height: 105px;
+    width: 100%;
+    background-image: url('../../images/blur.jpg');
+    background-size: cover;
+    background-color: #CCC;
+	}
+
+	.cover-photo {
+    display: inline-block;
+    width: 100%;
+    height: 310px;
+    background-size: cover;
+    background-image: url('../../images/blur.jpg');
+    background-color: #CCC;
+    margin: 40px 0 0 0 !important;
+	}
+
+	.profile-dp-holder, .profile-dp{
+		height: 70px;
+		width: 70px;
+	}
+
+	.profile-dp {
+			position: absolute;
+			border: 2px solid;
+			border-color: #CCC;
+	}
+
+	.profile-dp-holder {
+		position: absolute;
+		bottom: 0;
+		left: 40px;
+	}
+
+
+	.edit-profile-btn {
+    background-color: #E9E9E9;
+    height: auto;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    color: #444;
+    border: hidden;
+    border-radius: 4px;
+    font-size: 14px;
+	}
+
+	.like-count {
+    font-size: 14px;
+    margin: 30px 0 0 0;
+    display: inline-block;
+	}
+
+	.hide-screen-sm{
+		display: none;
+	}
+
+	section nav.menu {
+		display: none;
+	}
+
+	.display-box {
+    display: inline-block;
+    height: 220px;
+    width: 145px;
+    box-shadow: 0 1px 3px #CCC;
+    transition: .5s ease-in-out;
+    vertical-align: top;
+    margin: 1.5rem 0 0 0.2rem;
+	}
+
+	.naming {
+    position: absolute;
+    top: 120px;
+    left: 45px;
+    color: #FFF;
+	}
+
+	.ico-dp {
+    display: inline-table;
+    height: 35px;
+    width: 35px;
+    margin: -12px 0 5px 5px;
+	}
+
+	.chat-pane {
+    display: none;
+	}
+
+	.status-wrap{
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 1% 2% 0 2%;
+		width: 96%;
+		height: auto;
+		min-height: 150px;
+		background-color: #FFFFFF;
+		border-radius: 5px;
+		box-shadow: 0 1px 3px #CCC;
+		padding: 0 0 10px 0;
+		z-index: 20;
+	}
+
+	.text-space{
+		display: inline-block;
+		width: 100%;
+		background-color: #FFFFFF;
+		height: 60%;
+		color: #CCC;
+		border: hidden;
+		padding: 20px;
+		font-size: 16px;
+	}
+
+	.space-out {
+    display: block;
+    margin: 50px 0 15px 0;
+    font-weight: 600;
+	}
+
+	.general-notif {
+    position: fixed;
+    height: 100%;
+    width: 90%;
+    background-color: #FFF;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-message, .dropdown-whatsnew {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: 350px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: auto;
+    min-height: 150px;
+    width: 60%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+	}
+
+	.comment-pane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 90%;
+    margin: 100px 5% 0 5%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    font-size: 16px;
+    display: none;
+    border-radius: 4px;
+	}
+
+	.icon-upload {
+    position: absolute;
+    right: 30px;
+    top: 93px;
+    font-size: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    margin: 0 10px 0 0;
+	}
+
+	.modal-changecover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 100px 10% 0 10%;
+    width: 80%;
+    height: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 10;
+    display: none;
+	}
+
+	.status-pop {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    background-color: #00CC99;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 21px;
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    cursor: pointer;
+	}
+
+	#msg {
+		position: fixed;
+		bottom: 20px;
+		left: 10px;
+		height: auto;
+		width: 60%;
+		background-color: #444;
+		color: #FFF;
+		font-size: 12px;
+		padding: 10px;
+		border-radius: 3px;
+		z-index: 50;
+	}
+
+     .personal_holder {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    height: 96%;
+    width: 96%;
+    margin: 1% 2% 2% 2%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    z-index: 20;
+    display: none;
+	}
+
+	.menu_span, .menu_span:hover {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+    color: #CCC;
+    padding: 5px 0 0 10px;
+	}
+}

@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html{
+	height: 100%;
+}
+
+body {
+	background: #f9f7f6;
+	color: #404d5b;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+section.circlepanda_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+form.circlepanda_form{
+  width: 45%;
+  height: 100%;
+  background-color: transparent;
+  float: left;
+  padding: 0 5% 0 4%;
+}
+
+.circlepanda_form_vertcal_middle, .circlepanda_form_vertcal_middle1 {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  padding: 20px 0 50px 0;
+  display: inline-block;
+}
+
+.circlepanda_form_vertcal_middle{
+  margin: 40% 0 0 0;
+}
+
+.circlepanda_form_vertcal_middle1{
+  margin: 20% 0 0 0;
+}
+
+input.panda, select.panda, textarea.panda{
+  display: inline-block;
+  width: inherit;
+  margin: 0 0 30px 0;
+  color: #333;
+  padding-left: 10px;
+}
+
+textarea.panda{
+  padding-top: 5px;
+}
+
+input.panda, select.panda {
+    height: 50px;
+}
+
+textarea.panda {
+  height: 80px;
+}
+
+.pad-top{
+  display: inline-block;
+  margin: 100px 0 0 0;
+}
+
+.panda.ui.input, .panda.ui.textarea, .panda.ui.select{
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid;
+  border-color: #CCC;
+}
+
+.right.circlepanda_wrapper {
+  width: 55%;
+  height: 100%;
+  float: right;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.who {
+  position: absolute;
+  top: 110px;
+  right: 200px;
+  height: 110px;
+  width: 110px;
+  border: hidden;
+  background: -webkit-linear-gradient(right, #21abc7, #616db3);
+  background: linear-gradient(to left, #21abc7, #F7AB79);
+  background-color: transparent;
+  background-image: linear-gradient(to left, rgb(33, 171, 199), rgb(97, 109, 179));
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+}
+
+.float-right{
+  float: right;
+}
+
+float-left{
+  float: left
+}
+/*-- Bg Style color --*/
+.p_blue{
+  background-color: #2096CD;
+}
+
+.p_seagreen{
+  background-color: #21B2A6;
+}
+/*-- Bg Style color  --*/
+
+/*-- Count --*/
+.counter {
+	position: absolute;
+	top: 50px;
+  left: 30px;
+	font-size: 24px;
+}
+
+.current_count {
+  height: 40px;
+  width: 40px;
+  padding: 9px 0 0 0;
+  display: inline-table;
+  color: #FFF;
+}
+
+.c-color1 {background-color: #2096CD;}
+.c-color2 {background-color: #21B2A6;}
+.c-color3 {background-color: #FFD777;}

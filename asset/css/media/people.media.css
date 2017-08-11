@@ -1,0 +1,710 @@
+@media (min-width: 1920px) and (max-width: 2000px){
+  /*--- Post ---*/
+  .right-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 550px;
+    margin: 20px 0 0 10px;
+    padding: 0 0 3em 0;
+  }
+  .left-content {
+      display: inline-block;
+      background-color: transparent;
+      height: auto;
+      min-height: 500px;
+      width: 550px;
+      margin: 20px 5px 0 30px;
+      padding: 0 0 3em 0;
+  }
+  /*--- Inner Display Box ---*/
+  .display-box {
+    display: inline-block;
+    height: 300px;
+    width: 269px;
+    box-shadow: 0 1px 3px #CCC;
+    transition: .5s ease-in-out;
+}
+
+  /*-- Typo's --*/
+  .inner-name {
+    font-size: 18px;
+}
+
+.inner-btn, .inner-btn:hover{
+	display: inline-block;
+	font-size: 20px;
+	height: auto;
+	width: auto;
+	padding: 5px 20px 5px 20px;
+	background-color: transparent;
+	transition: .5s ease-in-out;
+	border: hidden;
+	background-color: #E9E9E9;
+	color: #444;
+	float: right;
+	border-radius: 4px;
+}
+
+
+/*--End media on screen [1920px]--*/
+}
+@media (min-width: 1440px) and (max-width: 1919px){
+
+}
+
+@media (min-width: 1280px) and (max-width: 1439px){
+
+}
+@media (min-width: 980px) and (max-width: 1279px){
+  .right-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 440px;
+    margin: 20px 0 0 30px;
+    padding: 0 0 3em 0;
+  }
+  .left-content {
+      display: inline-block;
+      background-color: transparent;
+      height: auto;
+      min-height: 500px;
+      width: 440px;
+      margin: 20px 5px 0 30px;
+      padding: 0 0 3em 0;
+  }
+
+	.home, .collection, .channel, .profile, .people, .page, .settings, .help,
+	.home:hover, .collection:hover, .channel:hover, .profile:hover, .people:hover, .page:hover, .settings:hover, .help:hover {
+			width: 190px;
+	}
+
+	.first-create-wrap {
+		position: fixed;
+		top: 25%;
+		left: 0;
+		width: 40%;
+		margin: 2% 30% 0 30%;
+		height: auto;
+		min-height: 320px;
+		background-color: #FFFFFF;
+		box-shadow: 0 1px 3px #CCCCCC;
+		z-index: 10;
+		display: none;
+	}
+
+	.first-create-wrap, .last-create-wrap{
+		padding-bottom: 10px;
+	}
+
+	.last-create-wrap {
+		position: fixed;
+		top: 3%;
+		left: 0;
+		width: 40%;
+		margin: 2% 30% 0 30%;
+		height: auto;
+		min-height: 680px;
+		background-color: #FFFFFF;
+		box-shadow: 0 1px 3px #CCCCCC;
+		z-index: 10;
+		display: none;
+	}
+
+	.col-sm-offset-3 {
+    margin-left: 20%;
+	}
+	.col-sm-8 {
+	    width: 76.667%;
+		}
+
+		.dropdown-whatsnew {
+			position: absolute;
+			top: 65px;
+			right: 60px;
+			height: 350px;
+			width: 90%;
+			background-color: #FFF;
+			box-shadow: 0 1px 3px #CCC;
+			border-radius: 3px;
+			z-index: 5;
+			overflow-y: scroll;
+			display: none;
+		}
+
+		.dropdown-message {
+			position: absolute;
+			top: 65px;
+			right: 40px;
+			height: 350px;
+			width: 90%;
+			background-color: #FFF;
+			box-shadow: 0 1px 3px #CCC;
+			border-radius: 3px;
+			z-index: 5;
+			overflow-y: scroll;
+			display: none;
+		}
+
+		.general-notif {
+			position: fixed;
+			height: 100%;
+			width: 40%;
+			background-color: #FFF;
+			top: 0;
+			right: 0;
+			overflow-y: scroll;
+			display: none;
+		}
+
+		.dropdown-nav {
+			position: absolute;
+			top: 65px;
+			right: 20px;
+			height: auto;
+			min-height: 150px;
+			width: 70%;
+			background-color: #FFF;
+			box-shadow: 0 1px 3px #CCC;
+			border-radius: 3px;
+			z-index: 5;
+			display: none;
+		}
+}
+@media (min-width: 800px) and (max-width: 979px){
+	.home, .collection, .channel, .profile, .people, .page, .settings, .help,
+	.home:hover, .collection:hover, .channel:hover, .profile:hover, .people:hover, .page:hover, .settings:hover, .help:hover {
+			width: 160px;
+	}
+
+	.first-create-wrap {
+		position: fixed;
+		top: 25%;
+		left: 0;
+		width: 50%;
+		margin: 2% 25% 0 25%;
+		height: auto;
+		min-height: 320px;
+		background-color: #FFFFFF;
+		box-shadow: 0 1px 3px #CCCCCC;
+		z-index: 10;
+		display: none;
+	}
+
+	.first-create-wrap, .last-create-wrap{
+		padding-bottom: 10px;
+	}
+
+	.last-create-wrap {
+		position: fixed;
+		top: 3%;
+		left: 0;
+		width: 50%;
+		margin: 2% 25% 0 25%;
+		height: auto;
+		min-height: 680px;
+		background-color: #FFFFFF;
+		box-shadow: 0 1px 3px #CCCCCC;
+		z-index: 10;
+		display: none;
+	}
+
+	.sitename-tag {
+    color: #000;
+    margin: 0 0 0 10px;
+    font-size: 18px;
+	}
+
+	.general-notif {
+    position: fixed;
+    height: 100%;
+    width: 45%;
+    background-color: #FFF;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-message {
+    position: absolute;
+    top: 65px;
+    right: 40px;
+    height: 350px;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-whatsnew {
+    position: absolute;
+    top: 65px;
+    right: 60px;
+    height: 350px;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: auto;
+    min-height: 150px;
+    width: 80%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 799px){
+	.home, .collection, .channel, .profile, .people, .page, .settings, .help,
+	.home:hover, .collection:hover, .channel:hover, .profile:hover, .people:hover, .page:hover, .settings:hover, .help:hover {
+			width: 100px;
+	}
+
+	.m_link{
+		display: none;
+	}
+
+	.first-create-wrap {
+		position: fixed;
+		top: 25%;
+		left: 0;
+		width: 50%;
+		margin: 2% 25% 0 25%;
+		height: auto;
+		min-height: 320px;
+		background-color: #FFFFFF;
+		box-shadow: 0 1px 3px #CCCCCC;
+		z-index: 10;
+		display: none;
+	}
+
+	.first-create-wrap, .last-create-wrap{
+		padding-bottom: 10px;
+	}
+
+	.last-create-wrap {
+		position: fixed;
+		top: 3%;
+		left: 0;
+		width: 50%;
+		margin: 2% 25% 0 25%;
+		height: auto;
+		min-height: 680px;
+		background-color: #FFFFFF;
+		box-shadow: 0 1px 3px #CCCCCC;
+		z-index: 10;
+		display: none;
+	}
+
+	.sitename-tag {
+		color: #000;
+		margin: 0 0 0 10px;
+		font-size: 16px;
+	}
+
+	.dropdown-whatsnew {
+		position: absolute;
+		top: 65px;
+		right: 60px;
+		height: 350px;
+		width: 100%;
+		background-color: #FFF;
+		box-shadow: 0 1px 3px #CCC;
+		border-radius: 3px;
+		z-index: 5;
+		overflow-y: scroll;
+		display: none;
+	}
+
+	.dropdown-message {
+		position: absolute;
+		top: 65px;
+		right: 40px;
+		height: 350px;
+		width: 100%;
+		background-color: #FFF;
+		box-shadow: 0 1px 3px #CCC;
+		border-radius: 3px;
+		z-index: 5;
+		overflow-y: scroll;
+		display: none;
+	}
+
+	.general-notif {
+		position: fixed;
+		height: 100%;
+		width: 45%;
+		background-color: #FFF;
+		top: 0;
+		right: 0;
+		overflow-y: scroll;
+		display: none;
+	}
+
+	.dropdown-nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: auto;
+    min-height: 150px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+	}
+
+	#on {
+    height: 13px;
+    width: 13px;
+    background-color: #0CC243;
+    z-index: 1;
+    position: absolute;
+    right: 180px;
+    top: 70px;
+    cursor: pointer;
+	}
+
+}
+@media (min-width: 360px) and (max-width: 767px){
+	.left-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 355px;
+    margin: 20px 0 0 0;
+    padding: 0 0 3em 0;
+	}
+
+.right-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 355px;
+    margin: 20px 0 0 0;
+    padding: 0 0 3em 0;
+	}
+
+	section nav.menu-top-plus, .submenu, section nav.menu, .chat-pane {
+		display: none;
+	}
+
+	.sp-tp{
+		margin: 120px 0 0 0;
+	}
+
+	.first-create-wrap {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    width: 90%;
+    margin: 2% 5% 0 5%;
+    height: auto;
+    min-height: 320px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCCCCC;
+    z-index: 10;
+    display: none;
+    padding-bottom: 10px;
+	}
+
+	.last-create-wrap {
+    position: fixed;
+    top: 3%;
+    left: 0;
+    width: 90%;
+    margin: 2% 5% 0 5%;
+    height: 450px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCCCCC;
+    z-index: 10;
+    display: none;
+	}
+
+	.profile-box {
+    display: inline-block;
+    height: 260px;
+    width: 230px;
+    box-shadow: 0 1px 3px #CCC;
+    transition: .5s ease-in-out;
+    vertical-align: top;
+    background-color: #FFF;
+    margin: 1.5rem 0 0 0.9rem;
+    padding: 20px 10px 20px 10px;
+	}
+
+	.c-cover-photo {
+    display: inline-block;
+    height: 180px;
+    width: 100%;
+    background-image: url('../../images/blur.jpg');
+    background-size: cover;
+    color: #FFF;
+	}
+
+	.cover {
+    display: inline-table;
+    height: 125px;
+    width: 100%;
+    background-image: url('../../images/blur.jpg');
+    background-size: cover;
+    background-color: #CCC;
+	}
+
+	.comment-pane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 90%;
+    margin: 100px 5% 0 5%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    font-size: 16px;
+    display: none;
+    border-radius: 4px;
+	}
+
+	.general-notif {
+    position: fixed;
+    height: 100%;
+    width: 90%;
+    background-color: #FFF;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-message, .dropdown-whatsnew {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: 350px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: auto;
+    min-height: 150px;
+    width: 60%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+	}
+
+	h1, .h1 {
+    font-size: 26px;
+	}
+
+	h3, .h3 {
+    font-size: 18px;
+	}
+
+	#msg {
+		position: fixed;
+		bottom: 20px;
+		left: 10px;
+		height: auto;
+		width: 60%;
+		background-color: #444;
+		color: #FFF;
+		font-size: 12px;
+		padding: 10px;
+		border-radius: 3px;
+		z-index: 50;
+	}
+}
+@media only screen and (min-width: 320px){
+	.left-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 355px;
+    margin: 20px 0 0 0;
+    padding: 0 0 3em 0;
+	}
+
+.right-content {
+    display: inline-block;
+    background-color: transparent;
+    height: auto;
+    min-height: 500px;
+    width: 355px;
+    margin: 20px 0 0 0;
+    padding: 0 0 3em 0;
+	}
+
+	section nav.menu-top-plus, .submenu, section nav.menu, .chat-pane {
+		display: none;
+	}
+
+	.sp-tp{
+		margin: 120px 0 0 0;
+	}
+
+	.first-create-wrap {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    width: 90%;
+    margin: 2% 5% 0 5%;
+    height: auto;
+    min-height: 320px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCCCCC;
+    z-index: 10;
+    display: none;
+    padding-bottom: 10px;
+	}
+
+	.last-create-wrap {
+    position: fixed;
+    top: 3%;
+    left: 0;
+    width: 90%;
+    margin: 2% 5% 0 5%;
+    height: 450px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #CCCCCC;
+    z-index: 10;
+    display: none;
+	}
+
+	.profile-box {
+    display: inline-block;
+    height: 260px;
+    width: 230px;
+    box-shadow: 0 1px 3px #CCC;
+    transition: .5s ease-in-out;
+    vertical-align: top;
+    background-color: #FFF;
+    margin: 1.5rem 0 0 0.9rem;
+    padding: 20px 10px 20px 10px;
+	}
+
+	.c-cover-photo {
+    display: inline-block;
+    height: 180px;
+    width: 100%;
+    background-image: url('../../images/blur.jpg');
+    background-size: cover;
+    color: #FFF;
+	}
+
+	.cover {
+    display: inline-table;
+    height: 125px;
+    width: 100%;
+    background-image: url('../../images/blur.jpg');
+    background-size: cover;
+    background-color: #CCC;
+	}
+
+	.comment-pane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 90%;
+    margin: 100px 5% 0 5%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    font-size: 16px;
+    display: none;
+    border-radius: 4px;
+	}
+
+	.general-notif {
+    position: fixed;
+    height: 100%;
+    width: 90%;
+    background-color: #FFF;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-message, .dropdown-whatsnew {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: 350px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    overflow-y: scroll;
+    display: none;
+	}
+
+	.dropdown-nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    height: auto;
+    min-height: 150px;
+    width: 60%;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px #CCC;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+	}
+
+	h1, .h1 {
+    font-size: 26px;
+	}
+
+	h3, .h3 {
+    font-size: 18px;
+	}
+
+	#msg {
+		position: fixed;
+		bottom: 20px;
+		left: 10px;
+		height: auto;
+		width: 60%;
+		background-color: #444;
+		color: #FFF;
+		font-size: 12px;
+		padding: 10px;
+		border-radius: 3px;
+		z-index: 50;
+	}
+}

@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+html{
+	height: 100%;
+}
+body {
+	background: #F9F9F9;
+	color: #404d5b;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  display: block;
+  height: auto;
+  min-height: 70px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e9e9e9;
+	z-index: 100;
+}
+
+.header-dp {
+	display: inline-table;
+	height: 40px;
+	width: 40px;
+	margin: 0 20px -15px 0;
+	border-radius: 50%;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  padding: 2% 4%;
+  background-color: #fff;
+}
+
+.banner.top {
+  margin: 70px 0 0;
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: 100;
+  color: #444;
+}
+
+.banner p {
+  display: block;
+  margin: 5% 0 0;
+  font-size: 18px;
+  font-weight: 100;
+  list-style: 35px;
+  height: auto;
+  width: 40%;
+  color: #444;
+}
+
+section.banner div {
+  display: block;
+  vertical-align: top;
+  padding: 0 2%;
+}
+
+section.banner div i {
+  display: block;
+  vertical-align: top;
+  margin-bottom: 2%;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding: 2% 4%;
+  background-color: #fff;
+}
+
+.middle-row {
+  display: block;
+  width: 100%;
+  height: 80%;
+  margin: 8% 0;
+}
+
+.form-wrap {
+  width: 25%;
+  min-width: 32.5em;
+  max-width: 32.5em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 3em;
+  margin: auto;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrap h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+.form-wrap p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-wrap p.sm {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Google Material Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-14 { font-size: 14px; }
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-54 { font-size: 54px; }
+.material-icons.md-62 { font-size: 62px; }
+.material-icons.md-72 { font-size: 72px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+/* Inner Dashboard Style Starts Here */
+
+.sidepane {
+  display: inline-table;
+  position: fixed;
+  height: auto;
+  min-height: 100%;
+  width: 20%;
+  background-color: #181f2b;
+  z-index: 100;
+}
+
+.sidepane .menu {
+  display: block;
+  margin: 5% 0 0;
+  height: auto;
+  min-height: 100px;
+  width: 100%;
+}
+.sidepane .menu .list, .sidepane .menu .list:hover, .head {
+  display: block;
+  padding: 10px 10px;
+  color: #aaa;
+  border-left: 4px solid transparent;
+  font-weight: 600;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.head {
+  color: #fff;
+  clear: both;
+}
+
+.sidepane .menu .list:hover, .sidepane .menu .list.active {
+  border-left: 4px solid #fff;
+  color: #fff;
+}
+
+.mainpane {
+  display: inline-table;
+  height: auto;
+  float: right;
+  min-height: 100%;
+  width: 79%;
+  vertical-align: top;
+}
+
+.mainpane .wrapper {
+  display: block;
+  float: right;
+  width: 90%;
+  margin: 2% 5%;
+  height: auto;
+  min-height: 50px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px #e9e9e9;
+}
+
+.mainpane .wrapper.first {
+  margin-top: 9%;
+}
+
+.mainpane .wrapper h1 {
+  font-weight: 100;
+}
+
+.mainpane .wrapper.last {
+  margin-bottom: 9%;
+}
+
+.mainpane .wrapper .toppane {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #d3d3d3;
+  padding: 20px 20px;
+}
+
+.img-icon {
+  display: block;
+  height: 180px;
+  width: 200px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.input-format {
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #e9e9e9;
+  padding: 5px 20px;
+}
+
+.save-footer, .dash-header {
+  position: fixed;
+  right: 0;
+  height: auto;
+  min-height: 20px;
+  background-color: #fcfcfc;
+  float: right;
+  width: 80%;
+  z-index: 11;
+  box-shadow: 2px 4px 6px #e9e9e9;
+}
+
+.save-footer {
+  bottom: 0;
+}
+
+.dash-header {
+  top: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+/*--- File button Alt Style ---*/
+
+label.myLabel input[type="file"] {
+    position: fixed;
+}
+
+/***** Example custom styling *****/
+.myLabel {
+		display: inline-table;
+		z-index: 2;
+		cursor: pointer;
+}
+.myLabel :invalid + span {
+    font-size: 26px;
+}
+.myLabel :valid + span {
+    color: #4C9ED9;
+		font-size: 26px;
+}
+
+section.page_dim {
+	position: fixed;
+	height: auto;
+	min-height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.platform-popup {
+	display: block;
+	margin: 15%;
+	width: 70%;
+	height: 300px;
+	padding: 10px 100px;
+	background-color: #fff;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.platform-popup h1 {
+	display: block;
+	font-size: 40px;
+	font-weight: 200;
+	color: #000;
+}
+
+.platform-popup .text-tag {
+	display: block;
+	font-size: 24px;
+	font-size: 200;
+	color: #e9e9e9;
+}
+.list-product a {
+	color: #444;
+}
+.list-product a.game {
+	color: #2c208c;
+}
+.list-product a.web {
+	color: #3565b2;
+}
+.list-product a.app {
+	color: #34b296;
+}
+/* Media Queries */
+
+@media (min-width: 1920px) and (max-width: 2000px) {
+
+}
+@media (min-width: 1440px) and (max-width: 1919px){
+	/*use :default style */
+}
+@media (min-width: 1280px) and (max-width: 1439px){
+
+}
+@media (min-width: 980px) and (max-width: 1279px) {
+
+}
+@media (min-width: 800px) and (max-width: 979px){
+
+}
+@media (min-width: 768px) and (max-width: 799px){
+
+}
+@media (min-width: 360px) and (max-width: 767px){
+	.ad_auth_holder {
+		display: none;
+	}
+	.logo-space {
+		display: block;
+		text-align: center;
+	}
+	.banner.top {
+    margin: 150px 0 0;
+	}
+	.banner p {
+    width: 70%;
+	}
+}
+@media (min-width: 320px) and (max-width: 359px){
+	.ad_auth_holder {
+		display: none;
+	}
+	.logo-space {
+		display: block;
+		text-align: center;
+	}
+	.banner.top {
+    margin: 150px 0 0;
+	}
+	.banner p {
+    width: 70%;
+	}
+}

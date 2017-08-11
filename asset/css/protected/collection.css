@@ -1,0 +1,14 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+body {
+	background: #E9E9E9;
+	color: #404d5b;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, div, section, span, table, input, button{
+  font-family: 'Raleway', Arial, sans-serif;
+}

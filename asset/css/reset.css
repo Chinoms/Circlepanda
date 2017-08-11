@@ -1,0 +1,107 @@
+a, h1, h2, h3, h4, h5, h6, p, div, section, span, table, input, button, nav, menu, ul, li {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+/* Google Material Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-14 { font-size: 14px; }
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+.wrapper-reset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  background-color: #e9e9e9;
+}
+
+.middle-wrapper {
+  display: block;
+  margin: 10% 20%;
+  width: 60%;
+  height: auto;
+  min-height: 350px;
+  padding: 25px 0;
+  max-height: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.userlist, .userlist:hover {
+  display: inline-table;
+  height: 60px;
+  width: 30%;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 3px;
+  color: #404d5b;
+  vertical-align: top;
+  transition: .5s ease-in-out;
+  font-size: 14px;
+}
+
+.userlist:hover {
+  background-color: #e9e9e9;
+}
+
+.dp-list {
+  display: inline-table;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.list_name, .list_location {
+  margin: 0 auto;
+}
+.list_name {
+  font-weight: 600;
+}
+.list_location {
+
+}
+
+.report {
+  padding: 10px;
+}

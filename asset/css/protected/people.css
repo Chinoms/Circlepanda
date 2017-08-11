@@ -1,0 +1,14 @@
+.follow-user-btn, .follow-user-btn:hover {
+  color: #000;
+  transition: .5s ease-in-out;
+}
+
+.follow-user-btn:hover, .follow-user-btn.active {
+  color: #fff;
+  content: 'following';
+  background-color: #3382c6;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, div, section, span, table, input, button{
+  font-family: 'Raleway', Arial, sans-serif;
+}

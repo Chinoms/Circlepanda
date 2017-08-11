@@ -1,0 +1,168 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+body {
+	background: #E9E9E9;
+	color: #404d5b;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, i, time, article, aside, div, section, span, table, input, button{
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.page-cover {
+  display: inline-block;
+  background: url('../../images/circlepanda-fullbanner-image-2.jpg') fixed no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 75%;
+  margin: 0 6% 0 0;
+  float: right;
+  background-color: #49bc9c;
+}
+
+.cover-optionholder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 150px;
+  float: right;
+  font-family: 'Raleway', Arial, sans-serif;
+  margin: 16% 6% 0 0;
+}
+
+img.admin-dp {
+  display: inline-table;
+  height: 120px;
+  width: 120px;
+  float: left;
+  margin: 2%;
+}
+
+.user-info {
+  display: inline-table;
+  margin: 40px 0 0 0;
+  color: #fff;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.add-btn {
+  padding: 10px 35px;
+  margin: 60px 30px 0 0;
+  font-weight: 600;
+}
+.add-btn.active {
+	color: #ffffff;
+}
+
+.inline-pos-addbtn, .abt-txt {
+  display: inline-table;
+  margin: 70px 15px 0 0;
+  float: right;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+}
+
+.page-dp {
+  display: block;
+  margin: 7% 0 5% 0;
+  border: 5px solid #fff;
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+}
+
+.page-menu {
+  display: block;
+  margin-left: 3%;
+}
+
+.bottombar {
+  background-color: #fff;
+  display: block;
+  height: auto;
+  min-height: 60px;
+  width: 75%;
+  margin: 0 6% 0 0;
+  float: right;
+}
+
+.post-wrap {
+  display: block;
+  height: auto;
+  min-height: 400px;
+  width: 75%;
+  margin: 2% 6% 0 0;
+  float: right;
+}
+
+.l_post-wrap-inner, .s_post-wrap-inner {
+  vertical-align: top;
+  display: table;
+  height: auto;
+  min-height: 100px;
+  padding: 1%;
+}
+
+.l_post-wrap-inner {
+  width: 61%;
+  float: left;
+  margin: 0 auto;
+}
+.s_post-wrap-inner {
+  width: 38%;
+  margin: 0 0 0 1%;
+  float: right;
+}
+
+.__tab, .__tab:hover {
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  color: #1d2129;
+  font-size: 14px;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.__tab:hover, .__tab.active {
+  background-color: #f9f9f9;
+}
+
+.photo-grid {
+	display: inline-grid;
+	height: auto;
+	width: auto;
+	height: 35px;
+	background-color: #000;
+	margin: 5px;
+}
+
+.pg_friends, .pg_friends:hover {
+	display: block;
+	height: 60px;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px;
+	transition: .5s ease-in-out;
+}
+.pg_friends:hover {
+	background-color: #e9e9e9;
+}
+.pg_icon_dp {
+	display: inline-table;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+.pg_name {
+	display: inline-table;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 5px 0 0 10px;
+}

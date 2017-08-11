@@ -1,0 +1,58 @@
+.div-category, .div-category:hover {
+	display: inline-table;
+	width: 250px;
+	height: 100px;
+	border-radius: 2px;
+	margin: 10px 20px;
+	vertical-align: top;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+
+.div-category {
+	background-color: #dee2e5;
+	color: #777a7f;
+}
+
+.div-category:hover, .div-category.active {
+	background-color: #74b1e8;
+	color: #fff;
+}
+
+.div-category i {
+	font-size: 30px;
+	margin: 20px 0 0 0;
+}
+
+.div-category h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+}
+
+.more-category {
+	display: none;
+}
+
+.user_holder, .user_holder:hover {
+	display: inline-table;
+	width: 50%;
+	height: 40px;
+	border-radius: 2px;
+	margin: 10px 20px;
+	vertical-align: top;
+	cursor: pointer;
+	text-align: left;
+	padding: 10px;
+	transition: .5s ease-in-out;
+}
+
+.user_holder:hover {
+	background-color: #dee2e5;
+}
+
+.dp-icon-list {
+	display: inline-table;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}

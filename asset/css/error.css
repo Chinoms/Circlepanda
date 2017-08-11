@@ -1,0 +1,16 @@
+.errormodal {
+  display: block;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+.error-report {
+  display: block;
+  font-size: 18px;
+  color: #404d5b;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, div, section, span, table, input, button {
+  font-family: 'Raleway', Arial, sans-serif;
+}

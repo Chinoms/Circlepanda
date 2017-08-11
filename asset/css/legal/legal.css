@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html{
+	height: 100%;
+}
+
+body {
+	background: #f9f7f6;
+	color: #404d5b;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  background-color: #19c1a8;
+}
+
+header nav {
+
+}
+
+header nav ul li {
+  display: inline-table;
+  list-style: none;
+  margin: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header nav ul li a, header nav ul li a:hover {
+  display: inline-table;
+  color: #fff;
+  transition: .5s ease-in-out;
+}
+
+.banner {
+		display: block;
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+		padding: 100px 20px;
+}
+
+.banner h1 {
+	font-size: 30px;
+	font-weight: 100;
+}
+
+.legal-wrapper {
+  display: block;
+  margin: 0 5%;
+  width: 90%;
+  padding: 100px;
+  height: auto;
+  min-height: 800px;
+  background-color: #fff;
+}
+
+.legal-wrapper p {
+	line-height: 30px;
+}
+
+.legal-wrapper .icon-holder {
+	display: block;
+	height: 300px;
+	width: 300px;
+	margin: 2% 100px;
+	padding: 60px;
+	image-resolution: from-image;
+	border-radius: 50%;
+	background-color: #d3e5d9;
+}
+
+/* Google Material Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-14 { font-size: 14px; }
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-54 { font-size: 54px; }
+.material-icons.md-60 { font-size: 60px; }
+.material-icons.md-72 { font-size: 72px; }
+.material-icons.md-80 { font-size: 80px; }
+.material-icons.md-120 { font-size: 120px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

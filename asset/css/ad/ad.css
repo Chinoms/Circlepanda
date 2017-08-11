@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+html{
+	height: 100%;
+}
+body {
+	background: #F9F9F9;
+	color: #404d5b;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, #217589, #36b8d8);
+	z-index: 100;
+}
+
+/* Google Material Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-14 { font-size: 14px; }
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-54 { font-size: 54px; }
+.material-icons.md-62 { font-size: 62px; }
+.material-icons.md-72 { font-size: 72px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* */
+
+.banner {
+  display: block;
+  height: auto;
+  min-height: 300px;
+  width: 100%;
+  padding: 10% 0 0 5%;
+  background: linear-gradient(to left, #217589, #36b8d8);
+}
+
+.banner h1 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.ad_container, .ad_inner_container {
+  display: block;
+  height: auto;
+  min-height: 400px;
+}
+
+.ad_container {
+	background-color: #fff;
+}
+
+.ad_inner_container {
+	background-color: #e9e9e9;
+}
+
+.ad_container h1 {
+  color: #525a5b;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.ad_desc_icon div {
+  width: 100%;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.ad_desc_icon div i {
+  display: block;
+}
+
+.ad_auth_holder {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ad_right {
+  float: right;
+}
+
+.ad_left {
+  float: left;
+}
+
+.no-follow{
+  color: #4C9ED9;
+  font-size: 20px;
+}
+
+.header-dp {
+	display: inline-table;
+	height: 40px;
+	width: 40px;
+	margin: 0 20px -15px 0;
+	border-radius: 50%;
+}
+
+.ad_midform_wrapper {
+	display: block;
+	height: auto;
+	min-height: 400px;
+	width: 65%;
+	margin: 7% 17.5%;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .2);
+}
+
+.display-box, .display-box:hover {
+    display: inline-table;
+		height: auto;
+		width: 215px;
+		min-height: 270px;
+		margin: 1.5rem 0.3rem 0 0.3rem;
+		cursor: pointer;
+		border-radius: 4px;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+		vertical-align: top;
+		transition: .5s ease-in-out;
+}
+.display-box:hover {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+/*-- display-box inner style --*/
+.ico-dp {
+    display: inline-table;
+    height: 40px;
+    width: 40px;
+    margin: -15px 0 3px 5px;
+}
+
+.inner-name{
+	font-size: 14px;
+}
+
+.inner-btn, .inner-btn:hover{
+	display: inline-block;
+	font-size: 16px;
+	height: auto;
+	width: auto;
+	padding: 5px 10px 5px 10px;
+	background-color: transparent;
+	transition: .5s ease-in-out;
+	border: hidden;
+	background-color: #E9E9E9;
+	color: #444;
+	float: right;
+	border-radius: 4px;
+	margin: -25px 0 0 0;
+}
+
+.bg-default-color, .bg-default-color:hover{
+	background-color: #CCC;
+	color: #FFF;
+}
+
+.cover {
+	display: inline-block;
+  width: 100%;
+  height: 150px;
+}
+
+.hide {
+	display: none;
+}
+
+/*--- File button Alt Style ---*/
+
+label.myLabel input[type="file"] {
+    position: fixed;
+}
+
+/***** Example custom styling *****/
+.myLabel {
+		display: inline-table;
+		z-index: 2;
+		cursor: pointer;
+}
+.myLabel :invalid + span {
+    font-size: 26px;
+}
+.myLabel :valid + span {
+    color: #4C9ED9;
+		font-size: 26px;
+}
+
+/* Media Queries */
+@media (min-width: 1920px) and (max-width: 2000px) {
+
+}
+@media (min-width: 1440px) and (max-width: 1919px){
+	/*use :default style */
+}
+@media (min-width: 1280px) and (max-width: 1439px){
+
+}
+@media (min-width: 980px) and (max-width: 1279px) {
+
+}
+@media (min-width: 800px) and (max-width: 979px){
+
+}
+@media (min-width: 768px) and (max-width: 799px){
+
+}
+@media (min-width: 360px) and (max-width: 767px){
+	header {
+    text-align: center;
+	}
+}
+@media (min-width: 320px) and (max-width: 359px){
+	header {
+    text-align: center;
+	}
+}

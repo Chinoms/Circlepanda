@@ -1,0 +1,43 @@
+/*
+	font-family: 'Ranga', cursive;
+	font-family: 'Baloo Bhaina', cursive;
+	font-family: 'Raleway', sans-serif;
+*/
+
+html, body {
+	margin: 0;
+	width: 100%;
+}
+.content {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #e9e9e9;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	min-height: 65px;
+	position: fixed;
+	background-color: #ffffff;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.choice-box, .choice-box:hover {
+	display: inline-table;
+	height: 70px;
+	width: 300px;
+	border-radius: 3px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+	margin: 0 20px 15px;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+
+.choice-box:hover {
+	background-color: #006699;
+	color: #fff;
+}
