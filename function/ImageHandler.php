@@ -1,6 +1,6 @@
 <?php
   include_once '__autoload.php';
-  class Image Extends HttpError
+  class Image extends HttpError
   {
     function get_web_path($file_system_path)
     {
@@ -49,7 +49,9 @@
        "file to {$upload_filename}");
 
        return $upload_filename;
-      }
+     } else {
+       return NULL;
+     }
     }
   }
   $image = new Image;

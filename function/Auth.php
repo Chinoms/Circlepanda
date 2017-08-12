@@ -30,7 +30,11 @@
       }
     }
   }
-  $protected_user_id = $_SESSION['user_id'];
+  if (isset($_SESSION['user_id'])) {
+    $protected_user_id = $_SESSION['user_id'];
+  } else {
+    $protected_user_id = NULL;
+  }
   if (isset($_SESSION['prevented_page'])) {
     $prevented_page = $_SESSION['prevented_page'];
   } else {

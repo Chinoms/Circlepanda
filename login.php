@@ -62,8 +62,7 @@ echo seoMeta($desc, $keyword);
 						<span class="col-sm-12">
 							<a href="<?php echo BASE_URL ?>">
 			          <img src="<?php echo BASE_URL . "asset/images/circlepanda-logo.png" ?>" alt="Circlepanda logo">
-								<?php echo $_SESSION['user_id']; ?>
-			        </a>
+					    </a>
 						</span>
 						<div class="col-sm-12 report">
 							<?php

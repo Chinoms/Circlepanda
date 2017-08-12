@@ -30,7 +30,7 @@ if(isset($_SESSION['user_id'])) {
   <body>
 
     <section class="circlepanda_container">
-      <form class="circlepanda_form float-left" action="<?php echo BASE_URL . "join/module/self"; ?>" method="post" target="_self">
+      <form class="circlepanda_form float-left" action="<?php echo BASE_URL . "module/self"; ?>" method="post" target="_self">
           <!-- Counter Start -->
         <div class="counter">
           <span class="current_count w3-center w3-circle c-color1">1</span>

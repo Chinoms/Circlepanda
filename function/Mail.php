@@ -1,18 +1,12 @@
 <?php
 class Mail
 {
-  function __construct($to, $name, $subject, $body)
+  function mailUser($to, $name, $subject, $body)
   {
-    $this->to = $to;
-    $this->name = $name;
-    $this->subject = $subject;
-    $this->body = $body;
-  }
-  function mailUser() {
 		$msg = '
 			<html>
 				<head>
-					<title>'. $this->subject .'</title>
+					<title>'. $subject .'</title>
 					<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 					<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 					<link rel="stylesheet" href="' . BASE_URL . '"asset/plugins/semantic-ui/semantic.min.css">
@@ -59,8 +53,8 @@ class Mail
 					</a>
 					<p> Connecting Creative minds </p>
 					</div>
-					<h2> Hi ' . $this->name . ', </h2>
-					<p> ' . $this->body . ' </p>
+					<h2> Hi ' . $name . ', </h2>
+					<p> ' . $body . ' </p>
 					<div class="w3-container w3-center">
 						<a class="ui button blue" href="' . BASE_URL . 'login"> Login </a>
 					</div>
@@ -78,5 +72,5 @@ class Mail
 		mail($to,$subject,$msg,$headers);
 	}
 }
-
+$mailer = new Mail;
 ?>

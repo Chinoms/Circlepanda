@@ -26,7 +26,7 @@ include_once '../app/connect.php';
   <body>
 
     <section class="circlepanda_container">
-      <form class="circlepanda_form float-right" action="<?php echo BASE_URL . "join/module/update_user"; ?>" method="post" enctype="multipart/form-data" accept-charset="UTF-8" target="_self">
+      <form class="circlepanda_form float-right" action="<?php echo BASE_URL . "module/update_user"; ?>" method="post" enctype="multipart/form-data" accept-charset="UTF-8" target="_self">
         <!-- Counter Start -->
         <div class="counter">
           <span class="current_count c-color2 w3-center w3-circle">2</span>
