@@ -1,13 +1,14 @@
 <?php
+  include_once '__autoload.php';
   class User
   {
-    function idto($conn, $id, $selector, $row)
+    function idto($conn, $id, $selector)
     {
-      $query = "SELECT fullname FROM users WHERE user_id='$id'";
+      $query = "SELECT $selector FROM users WHERE user_id='$id'";
       $res = mysqli_query($conn, $query);
         if ($res) {
           $row = mysqli_fetch_array($res);
-          $output = $row['fullname'];
+          $output = $row[$selector];
         }
       return $output;
     }

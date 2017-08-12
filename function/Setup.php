@@ -2,31 +2,55 @@
   include_once '__autoload.php';
   class SetupAccount extends Mail
   {
-    function __construct($id, $date)
-    {
-      $this->id = $id;
-      $this->date = $date;
-    }
-    function setup($conn)
+    function setup($conn, $id, $date)
     {
       $ff = sprintf("INSERT INTO follow_friend (user_id, friends_id, date) " .
           "VALUES ('%s', '%s', '%s'); ",
-  			mysqli_real_escape_string($conn, $this->id),
+  			mysqli_real_escape_string($conn, $id),
   			mysqli_real_escape_string($conn, 1),
-  			mysqli_real_escape_string($conn, $this->date),
+  			mysqli_real_escape_string($conn, $date),
   			mysqli_insert_id($conn));
 
-  			if(mysqli_query($conn, $ff)){
+  			if (mysqli_query($conn, $ff))
+        {
           $subject = "Circlepanda Notification";
-    			$f_email = $this->idto($conn, $id, $selector, $row);
-          $fullname = idtoname($conn, $id);
-          $ex_fullname = idtoname($conn, 1);
+    			$to = $this->idto($conn, $id, "email");
+          $fullname = $this->idto($conn, $id, "fullname");
+          $name = $this->idto($conn, 1, "fullname");
     			$body = "<p>" . $fullname . ", Started Following you on Circlepanda. </p>";
           $this->mailUser($to, $name, $subject, $body);
-          mailUser($f_email, $ex_fullname, $subject, $body);
+        }
+    }
+    public function InitiateSiteTour($conn, $user_id)
+    {
+      $checkTour = "SELECT * FROM sitetour WHERE user_id='$user_id'";
+      $result = mysqli_query($conn, $checkTour);
+      if ($result->num_rows > 1) {
+      	header("Location: ../home");
+      } else {
+        $row = mysqli_fetch_array($result);
+        $id  = $row['user_id'];
+        // Chain Zero => 0
+        $status = $hide_greeting = $personal_status = $notification = $messages = $badge = 0;
+        // Initiate Tour Query
+        $tour = sprintf("INSERT INTO sitetour (status, notification, messages, user_id, badge, hide_greeting, personal_status) " .
+        "VALUES ('%s', '%s' ,'%s', '%s', '%s', '%s' ,'%s'); ",
+        mysqli_real_escape_string($conn, $status),
+        mysqli_real_escape_string($conn, $notification),
+        mysqli_real_escape_string($conn, $messages),
+        mysqli_real_escape_string($conn, $user_id),
+        mysqli_real_escape_string($conn, $badge),
+        mysqli_real_escape_string($conn, $hide_greeting),
+        mysqli_real_escape_string($conn, $personal_status),
+        mysqli_insert_id($conn));
+        // Query Data into Database
+        if (mysqli_query($conn, $tour)) {
+          header("Location: ../home");
         } else {
-
-  		  }
+          $_SESSION['msg'] = "Couldn't set up your account.";
+          header("Location: " . $_SERVER['HTTP_REFERER']);
+        }
+      }
     }
   }
   $setup = new SetupAccount;

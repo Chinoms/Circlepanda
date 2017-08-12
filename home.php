@@ -2,19 +2,8 @@
   session_start();
   include_once 'app/connect.php';
   include_once 'module/userdata.php';
-  include_once 'function/greeting.php';
-  include_once 'function/timeago.php';
-  include_once 'function/likes/postlike.php';
-  include_once 'module/post/imgornot.php';
-  include_once 'function/urltitle.php';
-  include_once 'function/post/option.php';
-  include_once 'function/images/covercheck.php';
-  include_once 'function/images/channelcovercheck.php';
-  include_once 'function/images/collectioncovercheck.php';
-  include_once 'function/images/pagecovercheck.php';
-  include_once 'function/userinfo.php';
-  include_once 'function/collectioninfo.php';
-
+  include_once 'function/__autoload.php';
+  include_once 'module/imgornot.php';
 
   # Check for Active User session
   if(!isset($_SESSION['user_id'])) {
@@ -22,14 +11,13 @@
       header("Location: login");
   } else {
     unset($_SESSION['prevented_page']);
-
-    # Select site tour details
+    // Select site tour details
     $tour = "SELECT * FROM sitetour WHERE user_id = $user_id";
     $result = mysqli_query($conn, $tour);
     if ($result) {
       $row = mysqli_fetch_array($result);
-      $id        = $row['user_id'];
-      $badge     = $row['badge'];
+      $id  = $row['user_id'];
+      $badge = $row['badge'];
       $notification = $row['notification'];
       $messages = $row['messages'];
       $status = $row['status'];
@@ -46,7 +34,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Circlepanda <?php echo $not_count ?></title>
+    <title> Circlepanda </title>
     <?php
       include_once 'metas/seo.php';
       $desc = "Welcome to Circlepanda";
@@ -102,16 +90,13 @@
         ?>
       <!-- Circlepanda Comment Modal End -->
       <?php
-      # check if you've been introduced before now yes ? no :
-      if ($id == $user_id && $notification == 0 && $status == 0) {
-        include_once 'include/intro.php';
-      }
-      #check for new post
-      include_once 'module/newpost.php';
+        // check if you've been introduced before now yes ? no :
+        if ($id == $user_id && $notification == 0 && $status == 0) {
+          include_once 'include/intro.php';
+        }
+        // Circlepanda Menu
+        include_once 'include/menu.php';
       ?>
-
-      <!-- Circlepanda Menu -->
-      <?php include_once 'include/menu.php'; ?>
 
       <!-- Content Space -->
       <div class="postarea">
@@ -129,7 +114,7 @@
           <div class="box text-center" style="background-size: cover; background-image: url(<?php echo BASE_URL . "asset/images/stock/68db4265-fa19-408a-81bc-d8ebed6537db.jpg"; ?>);">
             <span class="w3-container">
               <?php
-                echo "<div class='white-txt'>". greetings() . "<h3>" . $fullname . " </h3> </div>";
+                echo '<div class="white-txt">'. $time->greetings() . '<h3>' . $fullname . '</h3> </div>';
               ?>
             </span>
           </div>
@@ -138,21 +123,18 @@
           <!-- Circlepanda Fetched Post -->
           <?php
           # Users Post
-          include_once 'function/post/post.php';
+          include_once 'include/post/post.php';
+          // People you know
+          $io = "SELECT * FROM users WHERE user_id != '$user_id'";
+          $result = mysqli_query($conn, $io);
+          if ($result->num_rows > 0) {
+            echo '<div class="box">';
+            include_once 'include/peopleyoumayknow.php';
+            echo '</div>';
+          }
+          // Channel
+          include_once 'include/channel/channel_allpost.php';
           ?>
-
-            <?php
-            $io = "SELECT * FROM users WHERE user_id != '$user_id'";
-            $result = mysqli_query($conn, $io);
-            if ($result->num_rows > 0) {
-              echo '<div class="box">';
-              include_once 'include/peopleyoumayknow.php';
-              echo '</div>';
-            }
-              # channel
-              include_once 'include/channel/channel_allpost.php';
-            ?>
-
           <!-- End Left content Space -->
         </div>
 
@@ -201,7 +183,7 @@
 
     <!-- Circlepanda post start -->
     <?php
-      $data['url'] = BASE_URL . 'module/post/regular_post';
+      $data['url'] = BASE_URL . 'module/user_post';
       include_once 'include/post-modal.php';
     ?>
     <!-- Circlepanda post end -->

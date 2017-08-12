@@ -1,5 +1,6 @@
 <?php
-class Mail
+include_once '__autoload.php';
+class Mail extends Url
 {
   function mailUser($to, $name, $subject, $body)
   {

@@ -7,6 +7,7 @@ define("DATABASE_USERNAME", "root");
 define("DATABASE_PASSWORD", "root");
 define("DATABASE_NAME", "circtgfh_pandadb");
 define('MODREWRITE', true);
+define('DEVELOPER_MOODE', '1');
 define('DEVELOPMENT_PHASE', 2);
 # Define base_url
 define("BASE_URL", "http://localhost:8888/circlepanda/");

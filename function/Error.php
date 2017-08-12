@@ -1,5 +1,6 @@
 <?php
-  class HttpError
+  include_once '__autoload.php';
+  class HttpError extends Mail
   {
     // Config error page
     function debug_print($message) {

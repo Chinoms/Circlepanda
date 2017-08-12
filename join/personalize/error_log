@@ -1,2 +1,0 @@
-[30-Jun-2017 08:44:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/circtgfh/public_html/module/userdata.php on line 2
-[30-Jun-2017 08:44:02 UTC] PHP Notice:  Undefined offset: 1 in /home/circtgfh/public_html/module/userdata.php on line 16

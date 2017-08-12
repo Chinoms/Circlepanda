@@ -40,7 +40,7 @@
   				header("Location: ../join/self");
   		  }
     }
-    public function updateAccount($conn, $gender, $phone, $year, $month, $day, $date, $image_fieldname, $upload_dir)
+    public function updateAccount($conn, $user_id, $email, $fullname, $gender, $phone, $year, $month, $day, $date, $image_fieldname, $upload_dir)
     {
         $upload_filename = $this->uploadImage($conn, $image_fieldname, $upload_dir);
         if ($upload_filename !== NULL) {
@@ -52,8 +52,8 @@
   						A Place you get to meet friends, and have fun.
   						Circlepanda, connects creative minds, Family and friends.
   					";
-  					mailUser($email, $fullname, 'Welcome to Circlepanda', $body);
-  					header("Location: ../personalize/getstarted");
+  					$this->mailUser($email, $fullname, 'Welcome to Circlepanda', $body);
+  					header("Location: ../home");
   				} else {
   					$_SESSION['message'] = "<h1>Your profile photo was unsuccessfully uploaded</h1><h1>:(</h1>";
   					header("Location: " . $_SERVER['HTTP_REFERER']);
@@ -68,8 +68,8 @@
             A Place you get to meet friends, and have fun.
             Circlepanda, connects creative minds, Family and friends.
             ";
-            mailUser($email, $fullname, 'Welcome to Circlepanda', $body);
-            header("Location: ../personalize/getstarted");
+            $this->mailUser($email, $fullname, 'Welcome to Circlepanda', $body);
+            header("Location: ../home");
           } else {
             $_SESSION['message'] = "<h1>Something went wrong, try againshortly</h1>";
             header("Location: " . $_SERVER['HTTP_REFERER']);
