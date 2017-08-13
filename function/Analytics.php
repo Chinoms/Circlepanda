@@ -1,6 +1,6 @@
 <?php
   include_once '__autoload.php';
-  class Analytics extends Track
+  class Analytics //extends Track
   {
     public function realCount($conn, $tbname)
     {

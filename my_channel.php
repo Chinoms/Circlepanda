@@ -2,10 +2,8 @@
   session_start();
   include_once 'app/connect.php';
   include_once 'module/userdata.php';
-  include_once 'function/timeago.php';
-  include_once 'module/post/imgornot.php';
-  include_once 'function/images/channelcovercheck.php';
-  include_once 'function/userinfo.php';
+  include_once 'function/__autoload.php';
+  include_once 'module/imgornot.php';
 
   # Check for Active User session
   if(!isset($_SESSION['user_id'])) {
@@ -74,7 +72,7 @@
     <header class="header channel-header-color">
       <?php
         include_once 'include/header.php';
-        include_once 'include/channel_menu.php';
+        include_once 'include/menu/channel_menu.php';
       ?>
     </header>
 
@@ -84,7 +82,7 @@
       <?php include_once 'include/menu_margin.php'; ?>
 
       <?php
-        $data['url'] = BASE_URL . "module/channel/create_channel";
+        $data['url'] = BASE_URL . "module/newchannel";
         $data['name'] = "Channel";
         $data['type_tag'] = "Choose channel type";
         $name['c_name'] = "channel_name";
@@ -109,8 +107,8 @@
         $result = mysqli_query($conn, $fetch);
           while ($row = mysqli_fetch_array($result)) {
             echo '<a href="'. BASE_URL .'channel_home?id='. $row['channel_id'] .'" class="display-box channeltext" style="background-color:'.$row['channel_color'].'">
-            '. channelCovercheck($conn, $row['cover_id']) .'
-              <img src="'. idtodp($conn, $row['user_id']) .'" class="ico-dp w3-circle">
+            '. $cover->channelCovercheck($conn, $row['cover_id']) .'
+              <img src="'. $convertIdto->idto($conn, $row['user_id'], "profile_pic_id") .'" class="ico-dp w3-circle">
               <div class="w3-container pulldown-top">
               <span class="inner-name"><strong>'. $row['channel_name'] .'</strong></span>
               <p class="contact-define">'. $row['channel_view'] .'</p>

@@ -11,12 +11,11 @@
         $row = mysqli_fetch_array($result);
         $fetched_id = $row['user_id'];
           if ($user_id == $fetched_id) {
-            $data['i'] = "liked";
+            return "liked";
           } else {
-            $data['i'] = null;
+            return NULL;
           }
         }
-      return $data['i'];
     }
 
     public function likephrase($id){

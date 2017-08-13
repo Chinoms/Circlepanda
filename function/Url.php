@@ -1,4 +1,5 @@
 <?php
+  include_once '__autoload.php';
   class Url
   {
     function MakeUrls($status)
@@ -40,5 +41,5 @@
       return $title;
     }
   }
-
+  $url = new Url;
 ?>
