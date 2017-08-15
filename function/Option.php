@@ -1,5 +1,4 @@
 <?php
-  include_once '__autoload.php';
   class Options
   {
     function postoption($conn, $id, $tbname) {

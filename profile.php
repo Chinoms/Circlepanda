@@ -2,18 +2,8 @@
   session_start();
   include_once 'app/connect.php';
   include_once 'module/userdata.php';
-  include_once 'function/greeting.php';
-  include_once 'include/comment.php';
-  include_once 'function/timeago.php';
-  include_once 'function/likes/postlike.php';
-  include_once 'module/post/imgornot.php';
-  include_once 'function/urltitle.php';
-  include_once 'function/post/option.php';
-  include_once 'function/count.php';
-  include_once 'function/images/covercheck.php';
-  include_once 'function/images/collectioncovercheck.php';
-  include_once 'function/userinfo.php';
-  include_once 'function/collectioninfo.php';
+  include_once 'function/__autoload.php';
+  include_once 'module/imgornot.php';
 
   # Check for Active User session
   if(!isset($_SESSION['user_id'])) {
@@ -117,7 +107,7 @@
                   $bio = $bio;
                 }
 
-                echo returnCount($conn, "follow_friend", "friends_id", $user_id) ." follower(s) - " . $bio
+                echo $analytics->returnCount($conn, "follow_friend", "friends_id", $user_id) ." follower(s) - " . $bio
               ?>
             </p>
           </div>
@@ -148,9 +138,9 @@
           <!-- Circlepanda Fetched Post -->
           <?php
             # Users Post
-            include_once 'function/post/self/no-limitpost.php';
+            include_once 'include/post/self/no-limitpost.php';
             # Collection Post
-            include_once 'function/post/self/collectionpost.php';
+            include_once 'include/post/self/collectionpost.php';
           ?>
           <!-- End Left content Space -->
         </div>
@@ -159,7 +149,7 @@
         <div class="right-content">
           <?php
             # Channel Post
-            include_once 'function/post/self/channelpost.php';
+            include_once 'include/post/self/channelpost.php';
           ?>
         </div>
       </section>

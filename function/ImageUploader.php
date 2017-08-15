@@ -4,7 +4,7 @@ class ImageUploader
 
   protected
       $size_limit,
-      $allowed_extensions;
+      $allowed_extensions,
       $failed_saves;
 
   public function __construct(int $limit, array $extensions){
@@ -17,10 +17,12 @@ class ImageUploader
           if($this->meetsSizeLimit($image['size'])){
               if($this->hasValidExtension(end(explode(".", $image["name"])))){
                   $this->storeImage($image, $this->getNextImageIndex());
+              } else {
+                $failed_saves[$image["name"] = "Invalid file type.";
               }
-              else    $failed_saves[$image["name"] = "Invalid file type.";
-          }
-          else    $failed_saves["name"] = "File is too large.";
+          } else {
+          $failed_saves["name"] = "File is too large.";
+        }
       }
       return $failed_saves;
   }

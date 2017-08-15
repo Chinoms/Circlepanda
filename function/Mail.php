@@ -1,5 +1,4 @@
 <?php
-include_once '__autoload.php';
 class Mail
 {
   function mailUser($to, $name, $subject, $body)

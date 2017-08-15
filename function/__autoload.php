@@ -3,13 +3,11 @@
   include_once 'Analytics.php';
   include_once 'Auth.php';
   include_once 'Cover.php';
-  include_once 'Channel.php';
-  include_once 'Collection.php';
   include_once 'Create.php';
   include_once 'Crypto.php';
   include_once 'Error.php';
   include_once 'ImageHandler.php';
-  include_once 'ImageUploader.php';
+  // include_once 'ImageUploader.php';
   include_once 'Join.php';
   include_once 'Likes.php';
   include_once 'Mail.php';

@@ -1,5 +1,5 @@
 <?php
-  include_once '__autoload.php';
+  include_once 'Error.php';
   class Image extends HttpError
   {
     function get_web_path($file_system_path)

@@ -1,5 +1,4 @@
 <?php
-  include_once '__autoload.php';
   class Likes
   {
     # check if you've liked this post, then make the like button active

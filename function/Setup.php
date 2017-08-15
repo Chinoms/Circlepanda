@@ -1,5 +1,5 @@
 <?php
-  include_once '__autoload.php';
+  include_once 'Mail.php';
   class SetupAccount extends Mail
   {
     function setup($conn, $id, $date)

@@ -1,5 +1,4 @@
 <?php
-  include_once '__autoload.php';
   class User
   {
     function idto($conn, $id, $selector)

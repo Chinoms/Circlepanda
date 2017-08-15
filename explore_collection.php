@@ -2,9 +2,7 @@
   session_start();
   include_once 'app/connect.php';
   include_once 'module/userdata.php';
-  include_once 'function/timeago.php';
-  include_once 'module/post/imgornot.php';
-  include_once 'function/images/collectioncovercheck.php';
+  include_once 'function/__autoload.php';
 
   # Check for Active User session
   if(!isset($_SESSION['user_id'])) {
@@ -73,7 +71,7 @@
     <header class="header collection-header-color">
       <?php
         include_once 'include/header.php';
-        include_once 'include/collection_menu.php';
+        include_once 'include/menu/collection_menu.php';
       ?>
     </header>
 

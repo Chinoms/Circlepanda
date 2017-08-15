@@ -1,5 +1,4 @@
 <?php
-  include_once '__autoload.php';
   class Cover // extends AnotherClass
   {
     // User Cover Photo Check

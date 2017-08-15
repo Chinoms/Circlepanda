@@ -1,5 +1,5 @@
 <?php
-  include_once '__autoload.php';
+  include_once 'ImageHandler.php';
   class Join extends Image
   {
     public function joinCirclepanda($conn, $fullname, $user_name, $email, $passcode, $gender, $year, $month, $day, $bio, $phone, $country, $state, $city, $user_cover_photo, $ip, $user_token, $date, $confirmed)

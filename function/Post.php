@@ -1,5 +1,5 @@
 <?php
-  include_once '__autoload.php';
+  include_once 'ImageHandler.php';
   class Post extends Image
   {
     public function statusPost($conn, $from, $view, $image_fieldname, $upload_dir, $status, $fullname, $date, $likes, $user_id, $profile_pic_id)
