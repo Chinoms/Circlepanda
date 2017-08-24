@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once '../app/connect.php';
+include_once '../function/__autoload.php';
 if(isset($_SESSION['user_id'])) {
   header("Location: ../home?rdr = " . $_SESSION['user_name']);
 }
@@ -39,7 +40,7 @@ if(isset($_SESSION['user_id'])) {
         <!-- Counter Ends -->
         <div class="circlepanda_form_vertcal_middle">
           <!-- Error Message Space -->
-         <?php include 'module/message.php'; ?>
+         <?php echo $error->inline_error(); ?>
 
           <div class="col-sm-6">
             <input type="text" class="panda ui input" name="fullname" placeholder="Fullname" required="required" autofocus>
@@ -82,7 +83,13 @@ if(isset($_SESSION['user_id'])) {
       </form>
       <div class="right circlepanda_wrapper w3-center float-right ui p_blue">
         <!-- Error Message -->
-        <?php include_once 'module/message2.php'; ?>
+        <?php
+          echo $error->inline_error();
+          echo
+          '<img src="' . BASE_URL . 'asset/images/circlepanda-meetfriends.png" class="pad-top">
+            <h1>Join Million of fun loving people, make fun a culture.</h1>
+          <h1>Connect the <i class="icon globe"></i></h1>';
+        ?>
       </div>
     </section>
 

@@ -15,6 +15,16 @@
     	"system_error_message={$system_error_message}");
     	exit($conn);
     }
+    public function inline_error()
+    {
+      if(isset($_SESSION['message'])) {
+         return
+         '<div class="alert alert-danger" role="alert">
+           <strong>Oh snap!</strong>' . $_SESSION['message'] . '
+         </div>';
+       unset($_SESSION['message']);
+      }
+    }
   }
   $error = new HttpError;
 ?>

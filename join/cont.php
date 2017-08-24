@@ -1,6 +1,7 @@
 <?php
-session_start();
-include_once '../app/connect.php';
+  session_start();
+  include_once '../app/connect.php';
+  include_once '../function/__autoload.php';
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@ include_once '../app/connect.php';
         <!-- Counter Ends -->
         <div class="circlepanda_form_vertcal_middle1">
           <!-- Error Message Space -->
-         <?php include 'module/message.php'; ?>
+         <?php echo $error->inline_error(); ?>
 
            <div class="col-sm-12 w3-center">
              <img src="" id="output" class="img-dp w3-circle">
@@ -127,7 +128,13 @@ include_once '../app/connect.php';
       </form>
       <div class="right circlepanda_wrapper w3-center float-left p_seagreen">
         <!-- Error Message -->
-        <?php include_once 'module/message2.php'; ?>
+        <?php
+          $error->inline_error();
+          echo
+          '<img src="' . BASE_URL . 'asset/images/circlepanda-meetfriends.png" class="pad-top">
+            <h1>Join Million of fun loving people, make fun a culture.</h1>
+          <h1>Connect the <i class="icon globe"></i></h1>';
+        ?>
       </div>
     </section>
 
