@@ -2,14 +2,14 @@
   session_start();
   include_once '../../app/connect.php';
   include_once '../../module/userdata.php';
-  include_once '../../function/generatetoken.php';
+  include_once '../../function/__autoload.php';
 
   if (($_SERVER["REQUEST_METHOD"]) === 'POST') {
     $app_name = $_POST['name'];
     $app_email = $_POST['email'];
-    $generic_app_id = "ID_" . mt_rand_str(10, '0123456789'); # Result
-    $app_public_key = "pk_test_" . mt_rand_str(40, '0123456789abcdefgh'); # Result
-    $app_secret_key = "sk_test_" . mt_rand_str(40, '0123456789abcdefgh'); # Result
+    $generic_app_id = "ID_" . $int->mt_rand_str(10, '0123456789'); # Result
+    $app_public_key = "pk_test_" . $int->mt_rand_str(40, '0123456789abcdefgh'); # Result
+    $app_secret_key = "sk_test_" . $int->mt_rand_str(40, '0123456789abcdefgh'); # Result
     $mode = 0;
 
     $appCreate = sprintf("INSERT INTO app (user_id, app_id, app_name, contact_email, app_secret_key, app_public_key, mode, created_date) " .

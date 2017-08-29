@@ -1,6 +1,4 @@
 <?php
-  session_start();
-  include_once '../../app/connect.php';
   $id = $_SESSION['app_id'];
   $appdata = "SELECT * FROM app WHERE app_id='$id'";
   $result = mysqli_query($conn, $appdata);
