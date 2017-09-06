@@ -16,6 +16,7 @@
     $upload_dir = $upload_dir_dp; // Setting Path images is stored.
     $join->updateAccount($conn, $id, $email, $fullname, $gender, $phone, $year, $month, $day, $date, $image_fieldname, $upload_dir);
 		$subscribe->newslater($conn, $email); // Return => 1 ['Success'] || Return => 0 ['Failed']
+		$setup->active($conn, $id, $date); // Track User offline and Online Mood.
 		$setup->setup($conn, $id, $date); // Follow Circlepanda Account by default
-  }
+	}
 ?>

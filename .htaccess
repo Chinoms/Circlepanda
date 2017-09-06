@@ -17,7 +17,7 @@ deny from all
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+friend\.php\?user_name=([^\s&]+) [NC]
     RewriteRule ^ friend/%1? [R=301,L]
     RewriteRule ^friend/([^/]+)/?$ friend.php?user_name=$1 [L,QSA]
-
+    
   # for channels
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+channel_home\.php\?id=([^\s&]+) [NC]
     RewriteRule ^ channel_home/%1? [R=301,L]

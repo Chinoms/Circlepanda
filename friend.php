@@ -2,20 +2,8 @@
   session_start();
   include_once 'app/connect.php';
   include_once 'module/userdata.php';
-  include_once 'function/greeting.php';
-  include_once 'include/comment.php';
-  include_once 'function/timeago.php';
-  include_once 'function/likes/postlike.php';
-  include_once 'module/post/imgornot.php';
-  include_once 'function/urltitle.php';
-  include_once 'function/post/option.php';
-  include_once 'function/count.php';
-  include_once 'function/images/covercheck.php';
-  include_once 'function/images/channelcovercheck.php';
-  include_once 'function/images/collectioncovercheck.php';
-  include_once 'function/images/pagecovercheck.php';
-  include_once 'function/userinfo.php';
-  include_once 'function/collectioninfo.php';
+  include_once 'function/__autoload.php';
+  include_once 'module/imgornot.php';
 
   # Check for Active User session
   if(!isset($_SESSION['user_id'])) {
@@ -23,10 +11,10 @@
       header("Location: login");
   } else {
     unset($_SESSION['prevented_page']);
-    $id = usernametoid($conn, $_GET['user_name']);
+    $id = $convertIdto->nickto($conn, $_GET['user_name'], 'user_id');
     $my_id = $user_id;
     if ($user_id == $id) {
-      header("location: profile");
+      header("location: ../profile");
     }
 
     /*
@@ -84,7 +72,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> <?php echo $fr_fullname . " " . $not_count ?> </title>
+    <title> <?php echo $fr_fullname . $_GET['user_name']?> </title>
     <?php
       include_once 'metas/seo.php';
       $desc = $bio;
@@ -125,7 +113,7 @@
   <body>
     <!-- Circlepanda Header -->
     <header class="profile-header-color">
-      <?php include_once 'include/header.php' ?>
+      <?php echo $id; include_once 'include/header.php' ?>
     </header>
 
     <!-- Circlepanda Body Content Space -->
@@ -159,7 +147,7 @@
                   $fr_bio = $bio;
                 }
 
-                echo "<span class='countfollowers'>" . returnCount($conn, "follow_friend", "friends_id", $fr_user_id) . "</span> follower(s) - " . $fr_bio
+                echo "<span class='countfollowers'>" . $analytics->returnCount($conn, "follow_friend", "friends_id", $fr_user_id) . "</span> follower(s) - " . $fr_bio
               ?>
             </p>
           </div>

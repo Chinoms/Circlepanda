@@ -11,8 +11,7 @@
   			mysqli_real_escape_string($conn, $date),
   			mysqli_insert_id($conn));
 
-  			if (mysqli_query($conn, $ff))
-        {
+  			if (mysqli_query($conn, $ff)) {
           $subject = "Circlepanda Notification";
     			$to = $this->idto($conn, $id, "email");
           $fullname = $this->idto($conn, $id, "fullname");
@@ -20,6 +19,21 @@
     			$body = "<p>" . $fullname . ", Started Following you on Circlepanda. </p>";
           $this->mailUser($to, $name, $subject, $body);
         }
+    }
+    public function active($conn, $user_id, $date)
+    {
+      $active = sprintf("INSERT INTO user_active(user_id, status, active_date) " .
+          "VALUES ('%s', '%s', '%s'); ",
+  			mysqli_real_escape_string($conn, $user_id),
+  			mysqli_real_escape_string($conn, 1),
+  			mysqli_real_escape_string($conn, $date),
+  			mysqli_insert_id($conn));
+
+			if (mysqli_query($conn, $active)) {
+        return 200;
+      } else {
+        return 406;
+      }
     }
     public function InitiateSiteTour($conn, $user_id)
     {

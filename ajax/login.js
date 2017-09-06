@@ -6,7 +6,7 @@ $(".login-wrap").on('submit', function(){
   var data = 'user_name='+name+'&password='+code;
   $.ajax({
   type: "POST",
-  url: "auth/login.php",
+  url: "module/login.php",
   data: data,
   success: function(data) {
      console.log(data);

@@ -129,7 +129,7 @@
           $result = mysqli_query($conn, $io);
           if ($result->num_rows > 0) {
             echo '<div class="box">';
-            include_once 'include/peopleyoumayknow.php';
+            include_once 'include/suggested_people.php';
             echo '</div>';
           }
           // Channel

@@ -53,7 +53,7 @@
   						Circlepanda, connects creative minds, Family and friends.
   					";
   					$this->mailUser($email, $fullname, 'Welcome to Circlepanda', $body);
-  					header("Location: ../home");
+  					header("Location: ../getstarted");
   				} else {
   					$_SESSION['message'] = "<h1>Your profile photo was unsuccessfully uploaded</h1><h1>:(</h1>";
   					header("Location: " . $_SERVER['HTTP_REFERER']);
@@ -69,7 +69,7 @@
             Circlepanda, connects creative minds, Family and friends.
             ";
             $this->mailUser($email, $fullname, 'Welcome to Circlepanda', $body);
-            header("Location: ../home");
+            header("Location: ../getstarted");
           } else {
             $_SESSION['message'] = "<h1>Something went wrong, try againshortly</h1>";
             header("Location: " . $_SERVER['HTTP_REFERER']);

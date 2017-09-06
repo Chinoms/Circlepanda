@@ -11,7 +11,8 @@
         return $output;
       }
     }
-    public function returnCount($conn, $from, $param, $id) {
+    public function returnCount($conn, $from, $param, $id)
+    {
       $count = "SELECT count(*) FROM $from WHERE $param=$id";
       $result = mysqli_query($conn, $count);
       if ($result) {
